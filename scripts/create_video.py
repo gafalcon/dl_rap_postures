@@ -25,15 +25,13 @@ def create_skeleton(frame, line):
         j1 = int(line[joint1+"_x"]), int(line[joint1+"_y"])
         j2 = int(line[joint2+"_x"]), int(line[joint2+"_y"])
         if validate_joint(j1) and validate_joint(j2):
-           cv2.line(frame, j1, j2,(0,0,255),5) 
+           cv2.line(frame, j1, j2,(0,255,0),5) 
 
 def draw_joints(frame, line, i_start):
     for joint in joints:
         center = int(line[joint+"_x"]), int(line[joint+"_y"])
-    # for i in range(i_start, len(line.index), 2):
-    #     center = int(line[i]), int(line[i+1])
         if validate_joint(center):
-            cv2.circle(frame, center, 5, (0,255,0), thickness=1, lineType=8, shift=0)
+            cv2.circle(frame, center, 7, (0,255,255), thickness=2, lineType=8, shift=0)
 
 def print_preds(frame, line):
     pred_b = "Good" if line["pred_b"] >= 0.5 else "Bad"
