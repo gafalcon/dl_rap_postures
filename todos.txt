@@ -3,9 +3,9 @@ TODOS
 - DONE: Resize all videos to 1280x960
 - DONE: Process them to get keypoints
 - DONE: Make dataset for training again!
-- TRAIN BINARY
-- TRAIN MULTICLASS
-- Evaluate on dataset of unlabeled videos
-- Add label on unlabeled videos
+- DONE: TRAIN BINARY
+- DONE: TRAIN MULTICLASS
+- DONE: Evaluate on dataset of unlabeled videos
+- DONE: Add label on unlabeled videos
 - Compare to labels made by rules
-- Find which classes are most incorrect
+- DONE: Find which classes are most incorrect
